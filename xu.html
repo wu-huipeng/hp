@@ -24,7 +24,8 @@ setTimeout(init,100);
 function init(){
 	var obox = document.getElementById('box'),
 		aDiv = obox.getElementsByTagName('div');
-		
+	document.getElementById("box").addEventListener("touchmove", touchMove, false);
+
 		for (var i = 0; i < aDiv.length; i++) {
 			aDiv[i].style.background = "url(images/"+(i+1)+".jpg) center/cover";
 			aDiv[i].style.transform = "rotateY("+(i*36)+"deg) translate3d(0,0,350px)";
@@ -39,6 +40,23 @@ function init(){
 		tX = 0,
 		tY = 10,
 		index = 0;//滚轮初始值
+	 function touchMove(event) {
+               e = e || window.event;
+				var nX = e.clientX,
+					nY = e.clientY;
+					 // 当前点的坐标和前一点的坐标差值
+					desX = nX - sX;
+					desY = nY - sY;
+                    tX += 10*0.1; 
+                    tY += 10*0.1;
+
+					obox.style.transform = "rotateX("+(-tY)+"deg) rotateY("+tX+"deg)";
+					sX = nX;
+					sY = nY;
+           
+	 
+	 }
+	
 	document.onmousedown = function(e){
 		clearInterval(obox.timer);
 		e = e || window.event;
