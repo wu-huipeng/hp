@@ -40,6 +40,33 @@ function init(){
 		tX = 0,
 		tY = 10,
 		index = 0;//滚轮初始值
+	
+		obox.addEventListener( 'touchmove' , function (event) {
+     // 如果这个元素的位置内只有一个手指的话
+    if  (event.targetTouches.length == 1)
+	 {
+　　　　 event.preventDefault(); // 阻止浏览器默认事件，重要 
+        var  touch = event.targetTouches[0];
+
+		clearInterval(obox.timer);
+
+	
+		var nX =  touch.pageX,
+			nY = touch.pageY;
+				// 当前点的坐标和前一点的坐标差值
+			desX = nX;
+			desY = nY;
+			tX += desX*0.1; 
+			tY += desY*0.1;
+
+			obox.style.transform = "rotateX("+(-tY)+"deg) rotateY("+tX+"deg)";
+			sX = nX;
+			sY = nY;
+
+    }
+	},false)
+	
+	
 	 function touchMove(event) {
                e = e || window.event;
 				var nX = e.clientX,
