@@ -21,20 +21,20 @@
 </div>
 
 	
-<script>
-var obj = document.getElementById('box');
-obj.addEventListener('touchmove', function(event) {
+//<script>
+//var obj = document.getElementById('box');
+//obj.addEventListener('touchmove', function(event) {
 // 如果这个元素的位置内只有一个手指的话
-if (event.targetTouches.length == 1) {
-　　　　 event.preventDefault();// 阻止浏览器默认事件，重要
-var touch = event.targetTouches[0];
+//if (event.targetTouches.length == 1) {
+//　　　　 event.preventDefault();// 阻止浏览器默认事件，重要
+//var touch = event.targetTouches[0];
 
-obj.style.transform = "rotateX("+(-touch.pageY)+"deg) rotateY("+touch.pageX+"deg)";
+//obj.style.transform = "rotateX("+(-touch.pageY)+"deg) rotateY("+touch.pageX+"deg)";
 // 把元素放在手指所在的位置
 
-}
-}, false);
-</script>
+//}
+//}, false);
+//</script>
 	
 setTimeout(init,100);
 function init(){
