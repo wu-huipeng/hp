@@ -55,62 +55,62 @@ li {
   box-shadow: rgba(17, 123, 194, 0.712) 0 0 50px 50px;
 }
 .minbox li:nth-child(1) {
-  background: url(./01.jpeg) no-repeat 0 0;
+  background: url(./1.jpg) no-repeat 0 0;
   -webkit-transform: translateZ(50px);
   background-size: cover;
 }
 .minbox li:nth-child(2) {
-  background: url(./02.jpeg) no-repeat 0 0;
+  background: url(./2.jpg) no-repeat 0 0;
   -webkit-transform: rotateX(10deg) translateZ(50px);
   background-size: cover;
 }
 .minbox li:nth-child(3) {
-  background: url(./03.jpeg) no-repeat 0 0;
+  background: url(./3.jpg) no-repeat 0 0;
   -webkit-transform: rotateX(-90deg) translateZ(50px);
   background-size: cover;
 }
 .minbox li:nth-child(4) {
-  background: url(./04.jpeg) no-repeat 0 0;
+  background: url(./4.jpg) no-repeat 0 0;
   -webkit-transform: rotateX(90deg) translateZ(50px);
   background-size: cover;
 }
 .minbox li:nth-child(5) {
-  background: url(./05.jpeg) no-repeat 0 0;
+  background: url(./5.jpg) no-repeat 0 0;
   -webkit-transform: rotateY(-90deg) translateZ(50px);
   background-size: cover;
 }
 .minbox li:nth-child(6) {
-  background: url(./06.jpeg) no-repeat 0 0;
+  background: url(./6.jpg) no-repeat 0 0;
   -webkit-transform: rotateY(90deg) translateZ(50px);
   background-size: cover;
 }
 .maxbox li:nth-child(1) {
-  background: url(./07.jpeg) no-repeat 0 0;
+  background: url(./7.jpg) no-repeat 0 0;
   -webkit-transform: translateZ(50px);
   background-size: cover;
 }
 .maxbox li:nth-child(2) {
-  background: url(./08.jpeg) no-repeat 0 0;
+  background: url(./8.jpg) no-repeat 0 0;
   -webkit-transform: translateZ(50px);
   background-size: cover;
 }
 .maxbox li:nth-child(3) {
-  background: url(./09.jpeg) no-repeat 0 0;
+  background: url(./9.jpg) no-repeat 0 0;
   -webkit-transform: rotateX(-90deg) translateZ(50px);
   background-size: cover;
 }
 .maxbox li:nth-child(4) {
-  background: url(./10.jpeg) no-repeat 0 0;
+  background: url(./10.jpg) no-repeat 0 0;
   -webkit-transform: rotateX(90deg) translateZ(50px);
   background-size: cover;
 }
 .maxbox li:nth-child(5) {
-  background: url(./11.jpeg) no-repeat 0 0;
+  background: url(./11.jpg) no-repeat 0 0;
   -webkit-transform: rotateY(-90deg) translateZ(50px);
   background-size: cover;
 }
 .maxbox li:nth-child(6) {
-  background: url(./12.jpeg) no-repeat 0 0;
+  background: url(./12.jpg) no-repeat 0 0;
   -webkit-transform: rotateY(90deg) translateZ(50px);
   background-size: cover;
 }
